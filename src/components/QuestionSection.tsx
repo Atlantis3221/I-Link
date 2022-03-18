@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import People from '../img/people.jpg'
 
 const QuestionContainer = styled.div`
 	width: 100%;
@@ -27,7 +28,7 @@ const QuestionSection: React.FC<{ text: string }> = ({ text }) => {
 	return (
 		<QuestionContainer>
 			<ImageWrapper>
-				<PersonImage src="/people.jpg" />
+				<PersonImage src={People} />
 			</ImageWrapper>
 			<TextWrapper>{text}</TextWrapper>
 		</QuestionContainer>
